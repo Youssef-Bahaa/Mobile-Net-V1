@@ -39,6 +39,7 @@ class DepthwiseSeparableConv(nn.Module):
             kernel_size=3,
             stride=stride,
             groups=in_channels,
+            padding=1,
             bias=False
         )
 
