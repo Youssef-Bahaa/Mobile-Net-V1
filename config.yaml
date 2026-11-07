@@ -1,0 +1,21 @@
+data:
+  root: "./datasets/imagenet"
+  num_workers: 8
+
+model:
+  alpha: 1.0
+  rho: 1.0
+  num_classes: 1000
+
+training:
+  epochs: 100
+  batch_size: 256
+  learning_rate: 0.045
+  lr_decay: 0.98
+  momentum: 0.9
+  rmsprop_alpha: 0.9
+  rmsprop_eps: 0.0316
+  weight_decay: 0.00004
+
+checkpoint:
+  save_dir: "./checkpoints"
